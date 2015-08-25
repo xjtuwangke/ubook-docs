@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Xjtuwangke\Aliyun\SLS\RequestCore\RequestCore | ubook docs</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Xjtuwangke_Aliyun_SLS_RequestCore_RequestCore" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">ubook docs</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../Xjtuwangke.html">Xjtuwangke</a></li>
+                                        <li><a href="../../../../Xjtuwangke/Aliyun.html">Aliyun</a></li>
+                                        <li><a href="../../../../Xjtuwangke/Aliyun/SLS.html">SLS</a></li>
+                                        <li><a href="../../../../Xjtuwangke/Aliyun/SLS/RequestCore.html">RequestCore</a></li>
+    
+                <li>RequestCore</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>RequestCore</h1>
+    </div>
+
+    <p>    class
+    <strong>RequestCore</strong>
+</p>
+
+            <div class="description">
+            <p>Handles all HTTP requests using cURL and manages the responses.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>HTTP_GET</td>
+                <td class="last">
+                    <p><em>GET HTTP Method</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_POST</td>
+                <td class="last">
+                    <p><em>POST HTTP Method</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PUT</td>
+                <td class="last">
+                    <p><em>PUT HTTP Method</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_DELETE</td>
+                <td class="last">
+                    <p><em>DELETE HTTP Method</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_HEAD</td>
+                <td class="last">
+                    <p><em>HEAD HTTP Method</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_request_url">
+                                                                                
+                </td>
+                <td>$request_url</td>
+                <td class="last">The URL being requested.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request_headers">
+                                                                                
+                </td>
+                <td>$request_headers</td>
+                <td class="last">The headers being sent in the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request_body">
+                                                                                
+                </td>
+                <td>$request_body</td>
+                <td class="last">The body being sent in the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response">
+                                                                                
+                </td>
+                <td>$response</td>
+                <td class="last">The response returned by the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_headers">
+                                                                                
+                </td>
+                <td>$response_headers</td>
+                <td class="last">The headers returned by the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_body">
+                                                                                
+                </td>
+                <td>$response_body</td>
+                <td class="last">The body returned by the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_code">
+                                                                                
+                </td>
+                <td>$response_code</td>
+                <td class="last">The HTTP status code returned by the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_info">
+                                                                                
+                </td>
+                <td>$response_info</td>
+                <td class="last">Additional response data.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_curl_handle">
+                                                                                
+                </td>
+                <td>$curl_handle</td>
+                <td class="last">The handle for the cURL object.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_method">
+                                                                                
+                </td>
+                <td>$method</td>
+                <td class="last">The method by which the request is being made.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxy">
+                                                                                
+                </td>
+                <td>$proxy</td>
+                <td class="last">Stores the proxy settings to use for the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_username">
+                                                                                
+                </td>
+                <td>$username</td>
+                <td class="last">The username to use for the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_password">
+                                                                                
+                </td>
+                <td>$password</td>
+                <td class="last">The password to use for the request.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_curlopts">
+                                                                                
+                </td>
+                <td>$curlopts</td>
+                <td class="last">Custom CURLOPT settings.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_mode">
+                                                                                
+                </td>
+                <td>$debug_mode</td>
+                <td class="last">The state of debug mode.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request_class">
+                                                                                
+                </td>
+                <td>$request_class</td>
+                <td class="last">The default class to use for HTTP Requests (defaults to <RequestCore>).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_class">
+                                                                                
+                </td>
+                <td>$response_class</td>
+                <td class="last">The default class to use for HTTP Responses (defaults to <ResponseCore>).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_useragent">
+                                                                                
+                </td>
+                <td>$useragent</td>
+                <td class="last">Default useragent string to use.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_read_file">
+                                                                                
+                </td>
+                <td>$read_file</td>
+                <td class="last">File to read from while streaming up.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_read_stream">
+                                                                                
+                </td>
+                <td>$read_stream</td>
+                <td class="last">The resource to read from while streaming up.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_read_stream_size">
+                                                                                
+                </td>
+                <td>$read_stream_size</td>
+                <td class="last">The size of the stream to read from.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_read_stream_read">
+                                                                                
+                </td>
+                <td>$read_stream_read</td>
+                <td class="last">The length already read from the stream.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_write_file">
+                                                                                
+                </td>
+                <td>$write_file</td>
+                <td class="last">File to write to while streaming down.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_write_stream">
+                                                                                
+                </td>
+                <td>$write_stream</td>
+                <td class="last">The resource to write to while streaming down.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_seek_position">
+                                                                                
+                </td>
+                <td>$seek_position</td>
+                <td class="last">Stores the intended starting seek position.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cacert_location">
+                                                                                
+                </td>
+                <td>$cacert_location</td>
+                <td class="last">The location of the cacert.pem file to use.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ssl_verification">
+                                                                                
+                </td>
+                <td>$ssl_verification</td>
+                <td class="last">The state of SSL certificate verification.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_registered_streaming_read_callback">
+                                                                                
+                </td>
+                <td>$registered_streaming_read_callback</td>
+                <td class="last">The user-defined callback function to call when a stream is read from.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_registered_streaming_write_callback">
+                                                                                
+                </td>
+                <td>$registered_streaming_write_callback</td>
+                <td class="last">The user-defined callback function to call when a stream is written to.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $url = null, string $proxy = null, array $helpers = null)
+                                            <p>Constructs a new instance of this class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___destruct">__destruct</a>()
+                                            <p>Destructs the instance. Closes opened file handles.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_credentials">set_credentials</a>(string $user, string $pass)
+                                            <p>Sets the credentials to use for authentication.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add_header">add_header</a>(string $key, mixed $value)
+                                            <p>Adds a custom HTTP header to the cURL request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove_header">remove_header</a>(string $key)
+                                            <p>Removes an HTTP header from the cURL request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_method">set_method</a>(string $method)
+                                            <p>Set the method type for the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_useragent">set_useragent</a>(string $ua)
+                                            <p>Sets a custom useragent string for the class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_body">set_body</a>(string $body)
+                                            <p>Set the body to send in the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_request_url">set_request_url</a>(string $url)
+                                            <p>Set the URL to make the request to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_curlopts">set_curlopts</a>(array $curlopts)
+                                            <p>Set additional CURLOPT settings. These will merge with the default settings, and override if
+there is a duplicate.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_read_stream_size">set_read_stream_size</a>(integer $size)
+                                            <p>Sets the length in bytes to read from the stream while streaming up.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_read_stream">set_read_stream</a>(resource $resource, integer $size = null)
+                                            <p>Sets the resource to read from while streaming up. Reads the stream from its current position until
+EOF or <code>$size</code> bytes have been read. If <code>$size</code> is not given it will be determined by &lt;php:fstat()> and
+&lt;php:ftell()>.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_read_file">set_read_file</a>(string $location)
+                                            <p>Sets the file to read from while streaming up.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_write_stream">set_write_stream</a>(resource $resource)
+                                            <p>Sets the resource to write to while streaming down.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_write_file">set_write_file</a>(string $location)
+                                            <p>Sets the file to write to while streaming down.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_proxy">set_proxy</a>(string $proxy)
+                                            <p>Set the proxy to use for making requests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_seek_position">set_seek_position</a>(integer $position)
+                                            <p>Set the intended starting seek position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_register_streaming_read_callback">register_streaming_read_callback</a>(string|array|<abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\function">function</abbr> $callback)
+                                            <p>Register a callback function to execute whenever a data stream is read from using
+&lt;CFRequest::streaming<em>read</em>callback()>.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_register_streaming_write_callback">register_streaming_write_callback</a>(string|array|<abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\function">function</abbr> $callback)
+                                            <p>Register a callback function to execute whenever a data stream is written to using
+&lt;CFRequest::streaming<em>write</em>callback()>.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\binary">binary</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_streaming_read_callback">streaming_read_callback</a>(resource $curl_handle, resource $file_handle, integer $length)
+                                            <p>A callback function that is invoked by cURL for streaming up.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_streaming_write_callback">streaming_write_callback</a>(resource $curl_handle, <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\binary">binary</abbr> $data)
+                                            <p>A callback function that is invoked by cURL for streaming down.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    resource
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prep_request">prep_request</a>()
+                                            <p>Prepares and adds the details of the cURL request. This can be passed along to a &lt;php:curl<em>multi</em>exec()>
+function.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Xjtuwangke/Aliyun/SLS/RequestCore/ResponseCore.html"><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\ResponseCore">ResponseCore</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process_response">process_response</a>(resource $curl_handle = null, string $response = null)
+                                            <p>Take the post-processed cURL data and break it down into useful header/body/info chunks. Uses the
+data stored in the <code>curl_handle</code> and <code>response</code> properties unless replacement data is passed in via
+parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send_request">send_request</a>(boolean $parse = false)
+                                            <p>Sends the request, calling necessary utility functions to update built-in properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send_multi_request">send_multi_request</a>(array $handles, array $opt = null)
+                                            <p>Sends the request using &lt;php:curl<em>multi</em>exec()>, enabling parallel requests. Uses the "rolling" method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_response_header">get_response_header</a>(string $header = null)
+                                            <p>Get the HTTP response headers from the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_response_body">get_response_body</a>()
+                                            <p>Get the HTTP response body from the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_response_code">get_response_code</a>()
+                                            <p>Get the HTTP response code from the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 210</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>__construct</strong>(string $url = null, string $proxy = null, array $helpers = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructs a new instance of this class.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>(Optional) The URL to request or service endpoint to query.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proxy</td>
+                <td>(Optional) The faux-url to use for proxy settings. Takes the following format: <code>proxy://user:pass@hostname:port</code></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$helpers</td>
+                <td>(Optional) An associative array of classnames to use for request, and response functionality. Gets passed in automatically by the calling class.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">at line 243</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>__destruct</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Destructs the instance. Closes opened file handles.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_credentials">
+        <div class="location">at line 269</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_credentials</strong>(string $user, string $pass)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the credentials to use for authentication.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$user</td>
+                <td>(Required) The username to authenticate with.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pass</td>
+                <td>(Required) The password to authenticate with.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add_header">
+        <div class="location">at line 283</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>add_header</strong>(string $key, mixed $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a custom HTTP header to the cURL request.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>(Required) The custom HTTP header to set.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>(Required) The value to assign to the custom HTTP header.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove_header">
+        <div class="location">at line 295</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>remove_header</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Removes an HTTP header from the cURL request.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>(Required) The custom HTTP header to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_method">
+        <div class="location">at line 310</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_method</strong>(string $method)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the method type for the request.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>(Required) One of the following constants: <HTTP_GET>, <HTTP_POST>, <HTTP_PUT>, <HTTP_HEAD>, <HTTP_DELETE>.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_useragent">
+        <div class="location">at line 322</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_useragent</strong>(string $ua)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets a custom useragent string for the class.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$ua</td>
+                <td>(Required) The useragent string to use.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_body">
+        <div class="location">at line 334</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_body</strong>(string $body)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the body to send in the request.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td>(Required) The textual content to send along in the body of the request.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_request_url">
+        <div class="location">at line 346</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_request_url</strong>(string $url)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the URL to make the request to.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>(Required) The URL to make the request to.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_curlopts">
+        <div class="location">at line 359</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_curlopts</strong>(array $curlopts)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set additional CURLOPT settings. These will merge with the default settings, and override if
+there is a duplicate.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$curlopts</td>
+                <td>(Optional) A set of key-value pairs that set <code>CURLOPT</code> options. These will merge with the existing CURLOPTs, and ones passed here will override the defaults. Keys should be the <code>CURLOPT_*</code> constants, not strings.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_read_stream_size">
+        <div class="location">at line 371</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_read_stream_size</strong>(integer $size)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the length in bytes to read from the stream while streaming up.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$size</td>
+                <td>(Required) The length in bytes to read from the stream.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_read_stream">
+        <div class="location">at line 387</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_read_stream</strong>(resource $resource, integer $size = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the resource to read from while streaming up. Reads the stream from its current position until
+EOF or <code>$size</code> bytes have been read. If <code>$size</code> is not given it will be determined by &lt;php:fstat()> and
+&lt;php:ftell()>.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$resource</td>
+                <td>(Required) The readable resource to read from.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$size</td>
+                <td>(Optional) The size of the stream to read.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_read_file">
+        <div class="location">at line 415</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_read_file</strong>(string $location)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the file to read from while streaming up.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td>(Required) The readable location to read from.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_write_stream">
+        <div class="location">at line 429</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_write_stream</strong>(resource $resource)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the resource to write to while streaming down.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$resource</td>
+                <td>(Required) The writeable resource to write to.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_write_file">
+        <div class="location">at line 442</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_write_file</strong>(string $location)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the file to write to while streaming down.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td>(Required) The writeable location to write to.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_proxy">
+        <div class="location">at line 456</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_proxy</strong>(string $proxy)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the proxy to use for making requests.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$proxy</td>
+                <td>(Required) The faux-url to use for proxy settings. Takes the following format: <code>proxy://user:pass@hostname:port</code></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_seek_position">
+        <div class="location">at line 472</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>set_seek_position</strong>(integer $position)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the intended starting seek position.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$position</td>
+                <td>(Required) The byte-position of the stream to begin reading from.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register_streaming_read_callback">
+        <div class="location">at line 497</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>register_streaming_read_callback</strong>(string|array|<abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\function">function</abbr> $callback)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register a callback function to execute whenever a data stream is read from using
+&lt;CFRequest::streaming<em>read</em>callback()>.</p>                    <p>The user-defined callback function should accept three arguments:</p>
+
+<ul>
+    <li><code>$curl_handle</code> - <code>resource</code> - Required - The cURL handle resource that represents the in-progress transfer.</li>
+    <li><code>$file_handle</code> - <code>resource</code> - Required - The file handle resource that represents the file on the local file system.</li>
+    <li><code>$length</code> - <code>integer</code> - Required - The length in kilobytes of the data chunk that was transferred.</li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array|<abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\function">function</abbr></td>
+                <td>$callback</td>
+                <td>(Required) The callback function is called by &lt;php:call<em>user</em>func()>, so you can pass the following values: <ul>
+    <li>The name of a global function to execute, passed as a string.</li>
+    <li>A method to execute, passed as <code>array('ClassName', 'MethodName')</code>.</li>
+    <li>An anonymous function (PHP 5.3+).</li></ul></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register_streaming_write_callback">
+        <div class="location">at line 521</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr>
+    <strong>register_streaming_write_callback</strong>(string|array|<abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\function">function</abbr> $callback)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register a callback function to execute whenever a data stream is written to using
+&lt;CFRequest::streaming<em>write</em>callback()>.</p>                    <p>The user-defined callback function should accept two arguments:</p>
+
+<ul>
+    <li><code>$curl_handle</code> - <code>resource</code> - Required - The cURL handle resource that represents the in-progress transfer.</li>
+    <li><code>$length</code> - <code>integer</code> - Required - The length in kilobytes of the data chunk that was transferred.</li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array|<abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\function">function</abbr></td>
+                <td>$callback</td>
+                <td>(Required) The callback function is called by &lt;php:call<em>user</em>func()>, so you can pass the following values: <ul>
+    <li>The name of a global function to execute, passed as a string.</li>
+    <li>A method to execute, passed as <code>array('ClassName', 'MethodName')</code>.</li>
+    <li>An anonymous function (PHP 5.3+).</li></ul></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\$this">$this</abbr></td>
+            <td>A reference to the current instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_streaming_read_callback">
+        <div class="location">at line 540</div>
+        <code>                    <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\binary">binary</abbr>
+    <strong>streaming_read_callback</strong>(resource $curl_handle, resource $file_handle, integer $length)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>A callback function that is invoked by cURL for streaming up.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$curl_handle</td>
+                <td>(Required) The cURL handle for the request.</td>
+            </tr>
+                    <tr>
+                <td>resource</td>
+                <td>$file_handle</td>
+                <td>(Required) The open file handle resource.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$length</td>
+                <td>(Required) The maximum number of bytes to read.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\binary">binary</abbr></td>
+            <td>Binary data from a stream.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_streaming_write_callback">
+        <div class="location">at line 579</div>
+        <code>                    integer
+    <strong>streaming_write_callback</strong>(resource $curl_handle, <abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\binary">binary</abbr> $data)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>A callback function that is invoked by cURL for streaming down.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$curl_handle</td>
+                <td>(Required) The cURL handle for the request.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\binary">binary</abbr></td>
+                <td>$data</td>
+                <td>(Required) The data to write.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The number of bytes written.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prep_request">
+        <div class="location">at line 612</div>
+        <code>                    resource
+    <strong>prep_request</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Prepares and adds the details of the cURL request. This can be passed along to a &lt;php:curl<em>multi</em>exec()>
+function.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>resource</td>
+            <td>The handle for the cURL object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process_response">
+        <div class="location">at line 772</div>
+        <code>                    <a href="../../../../Xjtuwangke/Aliyun/SLS/RequestCore/ResponseCore.html"><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\ResponseCore">ResponseCore</abbr></a>
+    <strong>process_response</strong>(resource $curl_handle = null, string $response = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Take the post-processed cURL data and break it down into useful header/body/info chunks. Uses the
+data stored in the <code>curl_handle</code> and <code>response</code> properties unless replacement data is passed in via
+parameters.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$curl_handle</td>
+                <td>(Optional) The reference to the already executed cURL request.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$response</td>
+                <td>(Optional) The actual response content itself that needs to be parsed.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Xjtuwangke/Aliyun/SLS/RequestCore/ResponseCore.html"><abbr title="Xjtuwangke\Aliyun\SLS\RequestCore\ResponseCore">ResponseCore</abbr></a></td>
+            <td>A <ResponseCore> object containing a parsed HTTP response.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send_request">
+        <div class="location">at line 826</div>
+        <code>                    string
+    <strong>send_request</strong>(boolean $parse = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sends the request, calling necessary utility functions to update built-in properties.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$parse</td>
+                <td>(Optional) Whether to parse the response with ResponseCore or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The resulting unparsed data from the request.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send_multi_request">
+        <div class="location">at line 859</div>
+        <code>                    array
+    <strong>send_multi_request</strong>(array $handles, array $opt = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sends the request using &lt;php:curl<em>multi</em>exec()>, enabling parallel requests. Uses the "rolling" method.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$handles</td>
+                <td>(Required) An indexed array of cURL handles to process simultaneously.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$opt</td>
+                <td>(Optional) An associative array of parameters that can have the following keys: <ul>
+    <li><code>callback</code> - <code>string|array</code> - Optional - The string name of a function to pass the response data to. If this is a method, pass an array where the <code>[0]</code> index is the class and the <code>[1]</code> index is the method name.</li>
+    <li><code>limit</code> - <code>integer</code> - Optional - The number of simultaneous requests to make. This can be useful for scaling around slow server responses. Defaults to trusting cURLs judgement as to how many to use.</li></ul></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Post-processed cURL responses.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_response_header">
+        <div class="location">at line 952</div>
+        <code>                    string|array
+    <strong>get_response_header</strong>(string $header = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the HTTP response headers from the request.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$header</td>
+                <td>(Optional) A specific header value to return. Defaults to all headers.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|array</td>
+            <td>All or selected header values.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_response_body">
+        <div class="location">at line 966</div>
+        <code>                    string
+    <strong>get_response_body</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the HTTP response body from the request.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The response body.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_response_code">
+        <div class="location">at line 976</div>
+        <code>                    string
+    <strong>get_response_code</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the HTTP response code from the request.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The HTTP response code.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

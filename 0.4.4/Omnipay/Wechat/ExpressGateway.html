@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Omnipay\Wechat\ExpressGateway | ubook docs</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Omnipay_Wechat_ExpressGateway" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">ubook docs</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Omnipay.html">Omnipay</a></li>
+                                        <li><a href="../../Omnipay/Wechat.html">Wechat</a></li>
+    
+                <li>ExpressGateway</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>ExpressGateway</h1>
+    </div>
+
+    <p>    class
+    <strong>ExpressGateway</strong>        extends <abbr title="Omnipay\Common\AbstractGateway">AbstractGateway</abbr>
+</p>
+
+            <div class="description">
+            <p>WeChat:</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>delivery_entry</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DELIVERY_SUCCESS</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DELIVERY_FAIL</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>Trade_Type_JSAPI</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>Trade_Type_NATIVE</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>Trade_Type_APP</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>Trade_Type_WAP</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+                                            <p>Get gateway display name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultParameters">getDefaultParameters</a>()
+                                            <p>Define gateway parameters, in the following format:</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createPackageStr">createPackageStr</a>(array $params)
+                                            <p>create the package string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_purchase">purchase</a>(array $parameters = array())
+                                            <p>支付</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Omnipay/Wechat/Message/WechatCompletePurchaseRequest.html"><abbr title="Omnipay\Wechat\Message\WechatCompletePurchaseRequest">WechatCompletePurchaseRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_completePurchase">completePurchase</a>(array $parameters = array())
+                                            <p>完成支付</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deliveryNotify">deliveryNotify</a>($pack, $access_token)
+                                            <p>微信发货通知
+entry: https://api.weixin.qq.com/pay/delivernotify?access<em>token=xxxxxx
+post data:
+ {
+     "appid" : "wwwwb4f85f3a797777",
+     "openid" : "oX99MDgNcgwnz3zFN3DNmo8uwa-w",
+     "transid" : "111112222233333",
+     "out</em>trade<em>no" : "555666uuu",
+     "deliver</em>timestamp" : "1369745073",
+     "deliver<em>status" : "1",
+     "deliver</em>msg" : "ok",
+     "app<em>signature" : "53cca9d47b883bd4a5c85a9300df3da0cb48565c", "sign</em>method" : "sha1"
+ }</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line 31</div>
+        <code>                    
+    <strong>getName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get gateway display name</p>                    <p>This can be used by carts to get the display name for each gateway.</p>            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultParameters">
+        <div class="location">at line 145</div>
+        <code>                    
+    <strong>getDefaultParameters</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Define gateway parameters, in the following format:</p>                    <p>array(
+    'username' => '', // string variable
+    'testMode' => false, // boolean variable
+    'landingPage' => array('billing', 'login'), // enum variable, first item is default
+);</p>            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createPackageStr">
+        <div class="location">at line 176</div>
+        <code>                    string
+    <strong>createPackageStr</strong>(array $params)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>create the package string</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>['productid' => '']</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_purchase">
+        <div class="location">at line 204</div>
+        <code>                    mixed
+    <strong>purchase</strong>(array $parameters = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>支付</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>[ 'out<em>trade</em>no' => '', 'description' => '', 'subject' => ''</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_completePurchase">
+        <div class="location">at line 257</div>
+        <code>                    <a href="../../Omnipay/Wechat/Message/WechatCompletePurchaseRequest.html"><abbr title="Omnipay\Wechat\Message\WechatCompletePurchaseRequest">WechatCompletePurchaseRequest</abbr></a>
+    <strong>completePurchase</strong>(array $parameters = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>完成支付</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>['params' => [], 'body' => '']</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Omnipay/Wechat/Message/WechatCompletePurchaseRequest.html"><abbr title="Omnipay\Wechat\Message\WechatCompletePurchaseRequest">WechatCompletePurchaseRequest</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deliveryNotify">
+        <div class="location">at line 278</div>
+        <code>                    
+    <strong>deliveryNotify</strong>($pack, $access_token)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>微信发货通知
+entry: https://api.weixin.qq.com/pay/delivernotify?access<em>token=xxxxxx
+post data:
+ {
+     "appid" : "wwwwb4f85f3a797777",
+     "openid" : "oX99MDgNcgwnz3zFN3DNmo8uwa-w",
+     "transid" : "111112222233333",
+     "out</em>trade<em>no" : "555666uuu",
+     "deliver</em>timestamp" : "1369745073",
+     "deliver<em>status" : "1",
+     "deliver</em>msg" : "ok",
+     "app<em>signature" : "53cca9d47b883bd4a5c85a9300df3da0cb48565c", "sign</em>method" : "sha1"
+ }</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$pack</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$access_token</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

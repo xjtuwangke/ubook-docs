@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Xjtuwangke\Actions\AbstractAction\Roles\Listener | ubook docs</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Xjtuwangke_Actions_AbstractAction_Roles_Listener" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">ubook docs</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                                                            <li><a href="../../../../Xjtuwangke.html">Xjtuwangke</a></li>
+                                        <li><a href="../../../../Xjtuwangke/Actions.html">Actions</a></li>
+                                        <li><a href="../../../../Xjtuwangke/Actions/AbstractAction.html">AbstractAction</a></li>
+                                        <li><a href="../../../../Xjtuwangke/Actions/AbstractAction/Roles.html">Roles</a></li>
+    
+                <li>Listener</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Listener</h1>
+    </div>
+
+    <p>    interface
+    <strong>Listener</strong>
+</p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onCommit">onCommit</a>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action)
+                                            <p>监听Commit事件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onRollback">onRollback</a>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action)
+                                            <p>监听rollback事件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onFail">onFail</a>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action, <a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a> $exception)
+                                            <p>监听Fail事件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onSuccess">onSuccess</a>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action)
+                                            <p>监听成功事件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_onCommit">
+        <div class="location">at line 22</div>
+        <code>                    mixed
+    <strong>onCommit</strong>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>监听Commit事件</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr></td>
+                <td>$action</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onRollback">
+        <div class="location">at line 29</div>
+        <code>                    mixed
+    <strong>onRollback</strong>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>监听rollback事件</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr></td>
+                <td>$action</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onFail">
+        <div class="location">at line 37</div>
+        <code>                    mixed
+    <strong>onFail</strong>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action, <a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a> $exception)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>监听Fail事件</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr></td>
+                <td>$action</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>$exception</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onSuccess">
+        <div class="location">at line 44</div>
+        <code>                    mixed
+    <strong>onSuccess</strong>(<abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr> $action)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>监听成功事件</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Xjtuwangke\Actions\AbstractAction\Roles\Xjtuwangke\Actions\AbstractAction\ActionContract">ActionContract</abbr></td>
+                <td>$action</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
